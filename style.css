@@ -22,9 +22,20 @@ body {
 }
 
 .points {
-
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
+    width: 100px;
+    background-color: beige;
+    font-family: monospace;
+    font-size: 50px;
+    
+}
+
+#score {
+    margin: auto;
+    
 }
 
 
