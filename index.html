@@ -9,6 +9,7 @@
     <title>Snake Game</title>
 </head>
 <body>
+    <img src="bg.jpg" alt="">
     <div class="wrapper">
         <div class="container">
             <h1 class="title">Snake Game</h1>
@@ -16,8 +17,22 @@
                 <div class="points">
                     <p id="score">0</p>
                 </div>
-            <img src="bg.jpg" alt="">
+                
+            
+            <div class="nightMode">
+                <button onclick="reloadPage()">Restart</button> 
+                <button onclick="loadScript()">Night Mode</button>
+                </div>
         </div>
     </div>
+    <script>
+        function loadScript()  {
+            document.body.style.filter= "brightness(50%)"
+            document.body.style.overflow= "hidden"
+        }
+        function reloadPage() {
+            document.location.reload();
+        }
+    </script>
 </body>
 </html>
